@@ -12,7 +12,7 @@ export default {
         return crypto.createHmac("sha1", key).update(value).digest("base64");
     },
 
-    getHostIP: async function (): Promise<string>  {
+    getHostIP: async function (): Promise<string> {
         var response = await this.getRequest("https://api.ipify.org?format=json");
         return response["ip"];
     },
@@ -44,6 +44,12 @@ export default {
                 if (err) return reject(err)
                 resolve(content.toString());
             });
+        });
+    },
+
+    isFileExists(path: string): Promise<boolean> {
+        return new Promise((resolve, reject) => {
+            fs.exists(path, resolve);
         });
     },
 

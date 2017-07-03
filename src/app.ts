@@ -4,6 +4,11 @@ import tools from "./tools";
 import { DomainListModel, DomainTypeModel, RecordListModel, RecordTypeModel } from "./models/models";
 
 async function main() {
+    if(!await tools.isFileExists("./config.json")) {
+        console.error("[config.json]文件不存在, 请将[config-sample.json]文件修改完毕后重命名为[config.json]并与[app.js 或 可执行文件]保持在同一个目录下.");
+        process.exit(-1);
+    }
+
     const config: {
         AccessKeyId: string,
         AccessKeySecret: string,

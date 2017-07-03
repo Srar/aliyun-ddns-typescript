@@ -17,4 +17,5 @@ cd ./build/
 pm2 start app.js --name ddns
 pm2 save
 ```
-
+
+你也可以在[release](https://github.com/Srar/aliyun-ddns-typescript/releases)页面下载已打包的版本. 这样就无需安装node环境了.

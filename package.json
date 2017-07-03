@@ -1,29 +1,30 @@
 {
-    "name": "aliyun-ddns-typescript",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-        "build": "./node_modules/.bin/grunt build",
-        "watch": "./node_modules/.bin/grunt watch",
-        "clear": "./node_modules/.bin/grunt clear",
-        "auth": "./node_modules/.bin/ts-node auth.ts"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "grunt": "^1.0.1",
-        "grunt-cli": "^1.2.0",
-        "grunt-contrib-clean": "^1.1.0",
-        "grunt-contrib-watch": "^1.0.0",
-        "grunt-ts": "^6.0.0-beta.15",
-        "@types/mysql": "0.0.33",
-        "@types/node": "^7.0.18",
-        "@types/superagent": "^2.0.36",
-        "ts-node": "^3.0.4",
-        "typescript": "^2.3.2"
-    },
-    "dependencies": {
-        "superagent": "^3.5.2"
-    }
+  "name": "aliyun-ddns-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "./node_modules/.bin/grunt build",
+    "watch": "./node_modules/.bin/grunt watch",
+    "clear": "./node_modules/.bin/grunt clear",
+    "auth": "./node_modules/.bin/ts-node auth.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mysql": "0.0.33",
+    "@types/node": "^7.0.18",
+    "@types/superagent": "^2.0.36",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.15",
+    "pkg": "^4.1.1",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "superagent": "^3.5.2"
+  }
 }
