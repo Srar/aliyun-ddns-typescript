@@ -19,3 +19,7 @@ pm2 save
 ```
 
 你也可以在[release](https://github.com/Srar/aliyun-ddns-typescript/releases)页面下载已打包的版本. 这样就无需安装node环境了.
+
+# Q&A
+* Q: 经常出现`网络连接错误: Error: Timeout of 10000ms exceeded`
+* A: 由于获取公网IP的API是在海外, 国内访问海外服务器不是那么流畅所以会出现连接超时的提示. 不过这不影响使用所以不用担心.
