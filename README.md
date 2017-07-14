@@ -23,3 +23,5 @@ pm2 save
 # Q&A
 * Q: 经常出现`网络连接错误: Error: Timeout of 10000ms exceeded`
 * A: 由于获取公网IP的API是在海外, 国内访问海外服务器不是那么流畅所以会出现连接超时的提示. 不过这不影响使用所以不用担心.
+* Q: 同步失败出现`Specified time stamp or date value is expired.`
+* A: 请检查机器上时区是否为+8时区, 以及确认时间误差不要过大.
